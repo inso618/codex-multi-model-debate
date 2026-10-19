@@ -22,7 +22,7 @@ https://github.com/inso618/codex-multi-model-debate/tree/main/skills/debate
 
 安装后在下一轮消息中使用 `$debate`；如果列表尚未刷新，重新打开会话。安装器会拒绝覆盖同名目录。已安装私人版本的用户应先保留原版本，再决定是否替换。
 
-也可以在终端使用 Codex 自带安装器（以实际安装器位置为准；该安装器需要 Python 3.10+）：
+也可以在终端使用 Codex 自带安装器（以实际安装器位置为准）：
 
 ```bash
 python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
