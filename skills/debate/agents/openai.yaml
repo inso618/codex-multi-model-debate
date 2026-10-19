@@ -1,0 +1,3 @@
+interface:
+  display_name: "多模型 Debate"
+  short_description: "由 Codex 主持分层辩论，各家独立接收原始文件并保存上下文、分歧与回溯记录"

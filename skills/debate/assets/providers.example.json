@@ -1,0 +1,66 @@
+{
+  "env_file": "keys.env",
+  "participants": [
+    {
+      "id": "glm-proposer",
+      "provider": "tokenhub",
+      "enabled": true,
+      "model": "glm-5.3-flash",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "api_key_env": "TOKENHUB_API_KEY",
+      "role": "Proposer",
+      "focus": "用户价值、问题定义、可执行提案",
+      "max_output_tokens": 8192,
+      "max_context_chars": 120000,
+      "timeout_seconds": 240,
+      "stream": true,
+      "file_mode": "text_only"
+    },
+    {
+      "id": "mimo-challenger",
+      "provider": "tokenhub",
+      "enabled": true,
+      "model": "mimo-v2.6-pro",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "api_key_env": "TOKENHUB_API_KEY",
+      "role": "Challenger",
+      "focus": "反例、替代方案、长期影响",
+      "max_output_tokens": 8192,
+      "max_context_chars": 120000,
+      "timeout_seconds": 240,
+      "stream": true,
+      "file_mode": "text_only"
+    },
+    {
+      "id": "kimi-evidence",
+      "provider": "tokenhub",
+      "enabled": true,
+      "model": "kimi-k3",
+      "base_url": "https://tokenhub.tencentmaas.com/v1",
+      "api_key_env": "TOKENHUB_API_KEY",
+      "role": "Evidence Reviewer",
+      "focus": "证据覆盖、事实与推断、遗漏条件",
+      "max_output_tokens": 8192,
+      "max_context_chars": 120000,
+      "timeout_seconds": 240,
+      "stream": true,
+      "file_mode": "text_only",
+      "generation": {
+        "reasoning_effort": "high"
+      }
+    },
+    {
+      "id": "deepseek-reviewer",
+      "provider": "deepseek",
+      "enabled": true,
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "role": "Reviewer",
+      "focus": "逻辑缺口、技术约束、风险与验收条件",
+      "max_output_tokens": 8192,
+      "max_context_chars": 120000,
+      "timeout_seconds": 240
+    }
+  ]
+}

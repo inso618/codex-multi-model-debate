@@ -1,0 +1,28 @@
+# Local secrets and configuration
+.env
+.env.*
+!.env.example
+keys.env
+providers.json
+providers.local.json
+*.pem
+*.key
+# All debate outputs are private, including raw reasoning and copied originals
+state.json
+discussion.md
+originals/
+requests/
+responses/
+compactions/
+sessions/
+debate-workspace/
+docs/workplace/
+# Runtime/build artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+*.egg-info/
+dist/
+build/
